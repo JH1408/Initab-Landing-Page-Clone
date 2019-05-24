@@ -311,7 +311,8 @@ img {
 
 .date-time {
   color: var(--greyblue);
-  margin: 60px;
+  margin: 50px;
+  margin-bottom: 20px;
   font-family: 'Arial';
   text-align: center;
 }
@@ -440,4 +441,42 @@ img {
 
 .issues-list::-webkit-scrollbar {
     display: none;
+}
+
+.message {
+  font-size: 0.8rem;
+  font-family: 'Arial';
+  text-align: center;
+  line-height: 1.5;
+}
+
+.message-text {
+  display: inline;
+}
+
+.message-icon {
+  font-size: 10px;
+  vertical-align: text-top;
+}
+
+.dismiss {
+  display: inline;
+  color: var(--orange);
+  font-size: 0.8rem;
+  font-family: 'Arial';
+  text-align: center;
+  font-weight: 600;
+}
+
+.dismiss-message:hover {
+  cursor: pointer;
+}
+
+.orange-bg {
+  background-color: var(--orange);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: text-bottom;
 }

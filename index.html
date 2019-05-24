@@ -50,6 +50,15 @@
           <div class="current-time" id="current-time"><!-- JS Content --></div>
           <div class="current-date" id="current-date"><!-- JS Content --></div>
         </div>
+        <div class="message" id="dismiss">
+          <span class="orange-bg"><i class="fas fa-question message-icon"></i></span>
+          <p class="darkblue message-text">Did you know that you can display CUSTOM LINKS to display in this section?</p><br/>
+          <p class="darkblue message-text">Open the SETTINGS panel and add the URLs of your favorite sites to the 'CUSTOM LINKS' textarea.</p>
+          <div class="dismiss-message "onclick="dismiss()">
+            <span class="orange-bg" ><i class="fas fa-times message-icon"></i></span>
+            <p class="orange dismiss">Got it! Don't show me this again.</p>
+          </div>
+        </div>
       </div>
       <div class="column-four">
         <h1 class="column-head last-head lightblue" id="last-head"><i class="fab fa-github-alt"></i> Github issues history</h1>
@@ -84,66 +93,65 @@
         element.setAttribute('src', 'initab_logo.png');
         }
     </script>
-  <script>
-
-
-var mr = 'Merge Requests'
-var pr = 'Pull Requests'
-
-function changeGit() {
-  var p = document.getElementById("gitlab");
-  var q = document.getElementById("github");
-  var r = document.getElementById("disp-github");
-  var s = document.getElementById("disp-gitlab");
-  var t = document.getElementById("last-head2");
-  var u = document.getElementById("last-head");
-  var a = document.getElementById("btn-2");
-
-
-  if (p.style.display === "none") {
-    p.style.display = "block",
-    q.style.display = "none",
-    r.style.display = "none",
-    s.style.display = "block",
-    t.style.display = "block",
-    u.style.display = "none";
-    document.getElementById("btn-2").innerHTML = mr;
-    } else {
-    p.style.display = "none",
-    q.style.display = "block";
-    document.getElementById("btn-2").innerHTML = pr;
-  }
-
-};
-
-function changeGit2() {
-  var p = document.getElementById("gitlab");
-  var q = document.getElementById("github");
-  var r = document.getElementById("disp-github");
-  var s = document.getElementById("disp-gitlab");
-  var t = document.getElementById("last-head2");
-  var u = document.getElementById("last-head");
-  var a = document.getElementById("btn-2");
-  var b = document.getElementById("btn-3");
-  if (q.style.display === "none") {
-    q.style.display = "block",
-    p.style.display = "none",
-    s.style.display = "none",
-    r.style.display = "block";
-    u.style.display = "block",
-    t.style.display = "none";
-    document.getElementById("btn-2").innerHTML = pr;
-    } else {
-    q.style.display = "none",
-    p.style.display = "block";
-  }
-};
-
-</script>
-
-
-
     <script>
+      function dismiss() {
+        document.getElementById("dismiss").style.display = "none";
+      }
+    </script>
+    <script>
+
+      var mr = 'Merge Requests'
+      var pr = 'Pull Requests'
+
+      function changeGit() {
+        var p = document.getElementById("gitlab");
+        var q = document.getElementById("github");
+        var r = document.getElementById("disp-github");
+        var s = document.getElementById("disp-gitlab");
+        var t = document.getElementById("last-head2");
+        var u = document.getElementById("last-head");
+        var a = document.getElementById("btn-2");
+
+        if (p.style.display === "none") {
+          p.style.display = "block",
+          q.style.display = "none",
+          r.style.display = "none",
+          s.style.display = "block",
+          t.style.display = "block",
+          u.style.display = "none";
+          document.getElementById("btn-2").innerHTML = mr;
+          } else {
+          p.style.display = "none",
+          q.style.display = "block";
+          document.getElementById("btn-2").innerHTML = pr;
+        }
+      };
+
+      function changeGit2() {
+        var p = document.getElementById("gitlab");
+        var q = document.getElementById("github");
+        var r = document.getElementById("disp-github");
+        var s = document.getElementById("disp-gitlab");
+        var t = document.getElementById("last-head2");
+        var u = document.getElementById("last-head");
+        var a = document.getElementById("btn-2");
+        var b = document.getElementById("btn-3");
+        if (q.style.display === "none") {
+          q.style.display = "block",
+          p.style.display = "none",
+          s.style.display = "none",
+          r.style.display = "block";
+          u.style.display = "block",
+          t.style.display = "none";
+          document.getElementById("btn-2").innerHTML = pr;
+          } else {
+          q.style.display = "none",
+          p.style.display = "block";
+        }
+      };
+
+  </script>
+  <script>
     // Reddit Feed
       let data = [
         {
@@ -292,6 +300,7 @@ function changeGit2() {
 
       var date = moment().format('LL');
       document.getElementById('current-date').innerHTML = date;
+
     </script>
     <script>
     // Show issues
@@ -338,18 +347,21 @@ function changeGit2() {
       document.getElementById('github-list').innerHTML = cont;
 
       var newCont = '<ul class="issues-list" id="github-list">' + cont + '</ul>'
+
     </script>
     <script>
+
     var pullRequests = '<div class="github-icon"><i class="fab fa-github"></i></div><p class="github" >No recent GitHub pull request activity in your browser history.</p>'
     var prHistory = '<i class="fab fa-github-alt"></i> Github PR history</h1>'
     var issueHistory = '<i class="fab fa-github-alt"></i> Github issues history</h1>'
     var mergeRequest = 'No recent GitLab merge request activity in your browser history.'
     var mergeHistory = '<i class="fab fa-gitlab"></i> Gitlab Merge Req. history</h1>'
 
+    var btn = document.getElementById("btn-2");
+
     function changeClass() {
       var x = document.getElementById("second");
       var y = document.getElementById("first");
-      var g = document.getElementById("last-head").innerHTML
 
       if (x.style.display === "none") {
         x.style.display = "block",
@@ -360,8 +372,6 @@ function changeGit2() {
         x.style.display = "none",
         y.style.display = "block";
       }
-
-
     };
 
     function change() {
@@ -378,8 +388,6 @@ function changeGit2() {
       }
     };
 
-
     </script>
-
   </body>
 </html>
