@@ -480,3 +480,51 @@ img {
   display: inline-block;
   vertical-align: text-bottom;
 }
+
+
+@media only screen and (max-width: 900px) {
+
+  html {
+    font-size: 10px;
+  }
+
+  .icon-span {
+    height: 15px;
+    width: 15px;
+  }
+
+  .icon {
+    vertical-align: sub;
+  }
+
+  .column-one {
+    width: 120px;
+  }
+
+  .logo > a > img {
+    width: 60px;
+    height: auto;
+  }
+
+  .sm-icon {
+    font-size: 8px;
+    vertical-align: super;
+  }
+
+  .social-media > a {
+    width: 15px;
+    height: 15px;
+  }
+
+  .newsbox {
+    border-left: 1px solid var(--greyblue);
+  }
+
+  .newsbox:hover {
+    border-left: 1px solid var(--green);
+  }
+
+  .column-two, .column-four {
+    padding: 20px 10px;
+  }
+}
