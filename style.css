@@ -181,7 +181,7 @@ html, body {
 .column-two {
   background-color: var(--dark);
   padding: 30px 20px;
-  height: 90vh;
+  height: 100vh;
   width: 25vw;
   overflow-y: scroll;
   -ms-overflow-style: none;
