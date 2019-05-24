@@ -437,3 +437,7 @@ img {
   scrollbar-width: none;
   height: 80vh;
 }
+
+.issues-list::-webkit-scrollbar {
+    display: none;
+}
