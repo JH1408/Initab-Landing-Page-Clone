@@ -51,6 +51,7 @@ html, body {
   text-decoration: none;
   color: inherit;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .icon-span {
@@ -662,5 +663,11 @@ img {
 
   .triangle {
     height: 10px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .date-time {
+    margin: 50px 30px 20px 30px;
   }
 }
