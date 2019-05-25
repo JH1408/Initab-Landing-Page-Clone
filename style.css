@@ -513,7 +513,7 @@ img {
   }
 
   .logo{
-    height: 20px;
+    height: 40px;
   }
 
   .logo > a > img {
@@ -590,6 +590,10 @@ img {
   .fa-caret-up {
     font-size: 10px;
   }
+
+  .social-media {
+    padding-bottom: 10px;
+  }
 }
 
 @media only screen and (max-width: 560px) {
@@ -629,6 +633,10 @@ img {
   .icon {
     vertical-align: bottom;
     font-size: 6px;
+  }
+
+  .logo{
+    height: 20px;
   }
 
   .logo > a > img {
