@@ -166,7 +166,13 @@ html, body {
   height: 25px;
   display: inline-block;
   border-radius: 50%;
+  margin-right: 10px;
 }
+
+.social-media > a:last-of-type {
+  margin-right: 0;
+}
+
 
 .logo > a > img {
   color: var(--greyblue);
