@@ -152,6 +152,10 @@ html, body {
   background-color: #336699;
 }
 
+.social-media {
+  white-space: nowrap;
+}
+
 .sm-icon {
   font-size: 12px;
 }
@@ -202,7 +206,7 @@ html, body {
 }
 
 .newsbox:hover {
-    border-left: 3px solid var(--green);
+  border-left: 3px solid var(--green);
 }
 
 .newsbox-link {
@@ -216,7 +220,7 @@ html, body {
 }
 
 .misc {
-  margin: 5px;
+  margin: 5px 5px 5px 0px;
 }
 
 .score {
@@ -234,8 +238,7 @@ html, body {
 .comments-link {
    color: var(--pink);
    text-decoration: underline;
-   padding-left: 5px;
- }
+}
 
  .column-three {
    background-color: var(--dark);
@@ -263,7 +266,7 @@ html, body {
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  height: 35vh;
+  max-height: 35vh;
   border-bottom: 1px solid var(--grey);
 }
 
@@ -319,6 +322,7 @@ img {
 
 .current-time {
   font-size: 7.5rem;
+  white-space: nowrap;
 }
 
 .current-date {
@@ -514,10 +518,16 @@ img {
   .social-media > a {
     width: 15px;
     height: 15px;
+    margin-right: 5px;
+  }
+
+  .social-media > a:last-of-type {
+    margin-right: 0;
   }
 
   .newsbox {
     border-left: 1px solid var(--greyblue);
+    padding-left: 5px;
   }
 
   .newsbox:hover {
@@ -526,5 +536,131 @@ img {
 
   .column-two, .column-four {
     padding: 20px 10px;
+  }
+
+  .triangle {
+    height: 20px;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+
+  html {
+    font-size: 8px;
+  }
+
+  .column-three {
+    width: 55vw;
+  }
+
+  .icon {
+    font-size: 8px;
+  }
+
+  .icon-span {
+    height: 12px;
+    width: 12px;
+  }
+
+  .message-icon {
+    font-size: 8px;
+  }
+
+  .orange-bg {
+    width: 10px;
+    height: 10px;
+    vertical-align: bottom;
+  }
+
+  .fa-caret-up {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+
+  .column-three {
+    width: 45vw;
+  }
+
+  img {
+    height: 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  html {
+    font-size: 6px;
+  }
+
+  .column-three {
+    padding-top: 20px;
+  }
+
+  .column-two, .column-four {
+    padding-left: 5px;
+  }
+
+  .current-time {
+    margin-left: -20px;
+  }
+
+  .icon-span {
+    width: 10px;
+    height: 10px;
+  }
+
+  .icon {
+    vertical-align: bottom;
+    font-size: 6px;
+  }
+
+  .logo > a > img {
+    height: 10px;
+    width: auto;
+  }
+
+  .sm-icon {
+    font-size: 4px;
+    vertical-align: top;
+    position: relative;
+    top: 2px;
+  }
+
+  .social-media > a {
+    width: 7px;
+    height: 7px;
+  }
+
+  .lower-nav {
+    width: 100%
+  }
+
+  .column-one {
+    width: 60px;
+    padding: 5px;
+  }
+
+  .newsbox {
+    margin-bottom: 15px;
+  }
+
+  .message-icon {
+    font-size: 6px;
+    vertical-align: bottom;
+  }
+
+  .orange-bg {
+    width: 7px;
+    height: 7px;
+  }
+
+  .fa-caret-up {
+    font-size: 8px;
+  }
+
+  .triangle {
+    height: 10px;
   }
 }

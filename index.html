@@ -28,10 +28,7 @@
             <a href="http://initab.com/" target="_blank"><img src="initab_logo.png" alt="Initab Logo" onmouseover="hover(this);" onmouseout="unhover(this);" ></a>
           </div>
           <div class="social-media">
-            <a class="fb" href="#"><i class="fab fa-facebook-f sm-icon"></i></a>
-            <a class="in" href="#"><i class="fab fa-linkedin-in sm-icon"></i></a>
-            <a class="git" href="https://github.com/JH1408" target="_blank"><i class="fab fa-github-alt sm-icon"></i></a>
-            <a class="reddit" href="https://www.reddit.com/" target="_blank"><i class="fab fa-reddit-alien sm-icon"></i></a>
+            <a class="fb" href="#"><i class="fab fa-facebook-f sm-icon"></i></a><a class="in" href="#"><i class="fab fa-linkedin-in sm-icon"></i></a><a class="git" href="https://github.com/JH1408" target="_blank"><i class="fab fa-github-alt sm-icon"></i></a><a class="reddit" href="https://www.reddit.com/" target="_blank"><i class="fab fa-reddit-alien sm-icon"></i></a>
           </div>
         </div>
       </div>
@@ -102,7 +99,7 @@
 
       var mr = 'Merge Requests'
       var pr = 'Pull Requests'
-
+    // switch to gitlab
       function changeGit() {
         var p = document.getElementById("gitlab");
         var q = document.getElementById("github");
@@ -127,6 +124,7 @@
         }
       };
 
+    // switch to github
       function changeGit2() {
         var p = document.getElementById("gitlab");
         var q = document.getElementById("github");
@@ -357,8 +355,7 @@
     var mergeRequest = 'No recent GitLab merge request activity in your browser history.'
     var mergeHistory = '<i class="fab fa-gitlab"></i> Gitlab Merge Req. history</h1>'
 
-    var btn = document.getElementById("btn-2");
-
+    // click on pull requests
     function changeClass() {
       var x = document.getElementById("second");
       var y = document.getElementById("first");
@@ -374,6 +371,7 @@
       }
     };
 
+    // click on issues
     function change() {
       var z = document.getElementById("first");
       var v = document.getElementById("second");
