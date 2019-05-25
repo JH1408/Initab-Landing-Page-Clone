@@ -512,6 +512,10 @@ img {
     width: 120px;
   }
 
+  .logo{
+    height: 20px;
+  }
+
   .logo > a > img {
     width: 60px;
     height: auto;
@@ -547,6 +551,10 @@ img {
 
   .triangle {
     height: 20px;
+  }
+
+  .lower-nav {
+    padding-bottom: 0;
   }
 }
 
